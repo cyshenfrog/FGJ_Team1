@@ -2,17 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class StartBtnClick : MonoBehaviour
+namespace KaiR
 {
-    // Start is called before the first frame update
-    void Start()
+    public class StartBtnClick : MonoBehaviour
     {
-        
-    }
+        [SerializeField] ZoomInOut zoomInOut;
+        [SerializeField] GameObject loadingImgObj;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public void Click()
+        {
+            zoomInOut.SetZoomMode(ZoomMode.ChaseObj);
+            loadingImgObj.transform.position = (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            loadingImgObj.SetActive(true);
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        }
     }
 }
