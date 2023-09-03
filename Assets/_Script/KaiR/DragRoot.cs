@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 namespace KaiR
 {
@@ -8,9 +9,17 @@ namespace KaiR
     {
         [SerializeField] Transform rootObjTrans_;
 
+        public event EventHandler DragEvent;
+
         Camera mainCamera_;
 
         bool midBtnDown_ = false;
+
+        void OnDisable()
+        {
+            StopAllCoroutines();
+            midBtnDown_ = false;
+        }
 
         void Start()
         {
@@ -39,6 +48,7 @@ namespace KaiR
                 Vector3 currentPos = mainCamera_.ScreenToWorldPoint(Input.mousePosition);
                 currentPos.Set(currentPos.x, currentPos.y, 0);
                 rootObjTrans_.position += currentPos - previousPos;
+                DragEvent?.Invoke(this, EventArgs.Empty);
                 previousPos = currentPos;
                 yield return null;
             }

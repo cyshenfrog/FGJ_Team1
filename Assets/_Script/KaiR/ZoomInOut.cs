@@ -68,6 +68,10 @@ namespace KaiR
         {
             zoomMode_ = setZoomMode;
         }
+        public void SetChaseCursor()
+        {
+            zoomMode_ = ZoomMode.ChaseCursor;
+        }
     }
 
     public enum ZoomMode

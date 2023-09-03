@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using System;
 
 namespace KaiR
@@ -13,6 +14,8 @@ namespace KaiR
         [SerializeField] Transform rightTrans_;
 
         [SerializeField] string horizontalName_;
+
+        [SerializeField] UnityEvent getTreasureEvent_;
 
         public event EventHandler GetTreasureEvent;
 
@@ -38,6 +41,7 @@ namespace KaiR
             }
             if (transform.position.x >= rightTrans_.position.x)
             {
+                getTreasureEvent_.Invoke();
                 GetTreasureEvent?.Invoke(this, EventArgs.Empty);
                 this.enabled = false;
             }
