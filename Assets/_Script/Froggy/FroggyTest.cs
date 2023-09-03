@@ -5,9 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class FroggyTest : MonoBehaviour
 {
-    private IEnumerator Start()
+    private void Start()
     {
-        yield return new WaitForSeconds(2);
         Froggy.GoToLevel2();
     }
 }

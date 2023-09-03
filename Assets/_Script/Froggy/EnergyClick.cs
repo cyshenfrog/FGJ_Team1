@@ -29,6 +29,8 @@ public class EnergyClick : MonoBehaviour
         ClickSprite.DOFade(0.1f, 0.1f);
         if (EnergyCount >= 10)
             return;
+        Stage2.Instance.ClickSE.pitch = 1 + EnergyCount * 0.1f;
+        Stage2.Instance.ClickSE.Play();
         EnergyCount++;
         if (EnergyCount == 10)
         {

@@ -45,6 +45,8 @@ public class Stage2 : UnitySingleton_DR<Stage2>
     public UnityEvent EnergyFull;
     public GameObject EndingGroup;
     public Texture2D CursorTexture;
+    public Texture2D PIZZA;
+    public AudioSource ClickSE;
 
     // Start is called before the first frame update：
     private void Start()
@@ -52,6 +54,16 @@ public class Stage2 : UnitySingleton_DR<Stage2>
         ScreenshotRenderer.sprite = TextureToSprite(ES3.LoadImage("Screenshot.png"));
         ScreenshotRenderer2.sprite = TextureToSprite(ES3.LoadImage("Screenshot.png"));
         Cursor.SetCursor(CursorTexture, Vector2.zero, CursorMode.Auto);
+    }
+
+    public void HideCursor()
+    {
+        Cursor.SetCursor(PIZZA, Vector2.zero, CursorMode.Auto);
+    }
+
+    public void ShowCursor()
+    {
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     }
 
     private Sprite TextureToSprite(Texture2D t)
