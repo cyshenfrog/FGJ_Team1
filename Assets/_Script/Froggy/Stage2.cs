@@ -1,4 +1,5 @@
 using DG.Tweening;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,7 +14,7 @@ public static class Froggy
     public static void GoToLevel2()
     {
         ES3.SaveImage(ScreenShot(), "Screenshot.png");
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Scene2");
     }
 
     public static Texture2D ScreenShot()
@@ -35,17 +36,22 @@ public static class Froggy
 
 public class Stage2 : UnitySingleton_DR<Stage2>
 {
-    public SpriteRenderer Renderer;
+    public SpriteRenderer ScreenshotRenderer;
+    public SpriteRenderer ScreenshotRenderer2;
     public VolumeProfile PostFX;
     private Bloom bloom;
     public float BloomIntensity1 = 10;
     public float BloomIntensity2 = 100;
     public UnityEvent EnergyFull;
+    public GameObject EndingGroup;
+    public Texture2D CursorTexture;
 
     // Start is called before the first frame update：
     private void Start()
     {
-        Renderer.sprite = TextureToSprite(ES3.LoadImage("Screenshot.png"));
+        ScreenshotRenderer.sprite = TextureToSprite(ES3.LoadImage("Screenshot.png"));
+        ScreenshotRenderer2.sprite = TextureToSprite(ES3.LoadImage("Screenshot.png"));
+        Cursor.SetCursor(CursorTexture, Vector2.zero, CursorMode.Auto);
     }
 
     private Sprite TextureToSprite(Texture2D t)
@@ -55,7 +61,6 @@ public class Stage2 : UnitySingleton_DR<Stage2>
 
     public void OnEnergyFull()
     {
-        print("OnEnergyFull");
         EnergyFull.Invoke();
     }
 
@@ -63,6 +68,7 @@ public class Stage2 : UnitySingleton_DR<Stage2>
     {
         PostFX.TryGet(out bloom);
         DOTween.To(() => bloom.intensity.value, x => bloom.intensity.value = x, BloomIntensity1, 3)
+            .SetDelay(0.5f)
             .SetEase(Ease.Linear)
             .OnComplete(() =>
             {
@@ -72,8 +78,19 @@ public class Stage2 : UnitySingleton_DR<Stage2>
                     {
                         DOTween.To(() => bloom.intensity.value, x => bloom.intensity.value = x, 0, 1)
                         .SetDelay(1);
-                        Ending();
+                        _Ending();
                     });
             });
+    }
+
+    private void _Ending()
+    {
+        EndingGroup.SetActive(true);
+    }
+
+    public void NewGame()
+    {
+        SceneManager.LoadScene(0);
+        Destroy(gameObject);
     }
 }
