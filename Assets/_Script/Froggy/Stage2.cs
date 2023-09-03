@@ -37,7 +37,6 @@ public static class Froggy
 public class Stage2 : UnitySingleton_DR<Stage2>
 {
     public SpriteRenderer ScreenshotRenderer;
-    public SpriteRenderer ScreenshotRenderer2;
     public VolumeProfile PostFX;
     private Bloom bloom;
     public float BloomIntensity1 = 10;
@@ -52,7 +51,6 @@ public class Stage2 : UnitySingleton_DR<Stage2>
     private void Start()
     {
         ScreenshotRenderer.sprite = TextureToSprite(ES3.LoadImage("Screenshot.png"));
-        ScreenshotRenderer2.sprite = TextureToSprite(ES3.LoadImage("Screenshot.png"));
         Cursor.SetCursor(CursorTexture, Vector2.zero, CursorMode.Auto);
     }
 
