@@ -1636,13 +1636,14 @@ RectTransform:
   - {fileID: 806969955}
   - {fileID: 154923257}
   - {fileID: 1271763595}
+  - {fileID: 2053486210}
   m_Father: {fileID: 2064678567}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -4000}
-  m_SizeDelta: {x: 1092.01, y: 4244.59}
+  m_AnchoredPosition: {x: 0, y: -5000}
+  m_SizeDelta: {x: 1092.01, y: 6260.59}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &658684783
 AudioSource:
@@ -1798,7 +1799,7 @@ MonoBehaviour:
   targetGO: {fileID: 0}
   tweenTargetIsTargetGO: 1
   delay: 2
-  duration: 40
+  duration: 45
   easeType: 1
   easeCurve:
     serializedVersion: 2
@@ -1841,7 +1842,7 @@ MonoBehaviour:
   autoPlay: 1
   useTargetAsV3: 0
   endValueFloat: 0
-  endValueV3: {x: 0, y: 2100, z: 0}
+  endValueV3: {x: 0, y: 3100, z: 0}
   endValueV2: {x: 0, y: 0}
   endValueColor: {r: 1, g: 1, b: 1, a: 1}
   endValueString: 
@@ -1910,8 +1911,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Produced by Faust Game Jam Team-1 \r\n\n\n\n\n\n\n\n\n\n\n\n\r\n\u4F01\u5283\u3001\u7A0B\u5F0F
-    : \u9752\u86D9\r\n\r\n\u4E3B\u7A0B\u5F0F : KaiR\r\n\r\n2D\u7F8E\u8853 : \u661F\u7A7A\u3001\u512A\u59AE\r\n\r\n\n\n\n\n\n\n\n\n\n\n\n\n\u6307\u5C0E\u55AE\u4F4D\uFF1A\u6578\u4F4D\u767C\u5C55\u90E8\r\n\n\u4E3B\u8FA6\u55AE\u4F4D\uFF1A\u6578\u4F4D\u7522\u696D\u7F72\r\n\n\n\n\n\n\n\n\n\u57F7\u884C\u55AE\u4F4D\uFF1A\u53F0\u5317\u5E02\u96FB\u8166\u5546\u696D\u540C\u696D\u516C\u6703\u3001\u8CA1\u5718\u6CD5\u4EBA\u8CC7\u8A0A\u5DE5\u696D\u7B56\u9032\u6703\r\r\n\n\n\n\n\n\n\n\n\n\u5408\u8FA6\u55AE\u4F4D\uFF1A\u5357\u81FA\u79D1\u6280\u5927\u5B78\u591A\u5A92\u9AD4\u8207\u96FB\u8166\u5A1B\u6A02\u79D1\u5B78\u7CFB\u3001KIMU\u9AD8\u96C4\r\r\n\n\n\n\n\n\n\n\n\nFGJ\u4E3B\u8FA6\u55AE\u4F4D\uFF1AIGDATaiwan\r\n\n\n\n\n\n\n\n\n\n\nFaust
-    Game Jam 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u611F\u8B1D\u60A8\u7684\u904A\u73A9"
+    : \u9752\u86D9\r\n\r\n\u4E3B\u7A0B\u5F0F : KaiR\r\n\r\n2D\u7F8E\u8853 : \u661F\u7A7A\u3001\u512A\u59AE\r\n\r\n\n\n\n\n\n\n\n\n\n\n\n\n\u6307\u5C0E\u55AE\u4F4D\uFF1A\u6578\u4F4D\u767C\u5C55\u90E8\r\n\n\u4E3B\u8FA6\u55AE\u4F4D\uFF1A\u6578\u4F4D\u7522\u696D\u7F72\r\n\n\n\n\n\n\n\n\n\u57F7\u884C\u55AE\u4F4D\uFF1A\u53F0\u5317\u5E02\u96FB\u8166\u5546\u696D\u540C\u696D\u516C\u6703\u3001\u8CA1\u5718\u6CD5\u4EBA\u8CC7\u8A0A\u5DE5\u696D\u7B56\u9032\u6703\r\r\n\n\n\n\n\n\n\n\n\n\u5408\u8FA6\u55AE\u4F4D\uFF1A\u5357\u81FA\u79D1\u6280\u5927\u5B78\u591A\u5A92\u9AD4\u8207\u96FB\u8166\u5A1B\u6A02\u79D1\u5B78\u7CFB\u3001KIMU\u9AD8\u96C4\r\r\n\n\n\n\n\n\n\n\n\nFGJ\u4E3B\u8FA6\u55AE\u4F4D\uFF1AIGDATaiwan\r\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFaust
+    Game Jam 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u611F\u8B1D\u60A8\u7684\u904A\u73A9"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5acdd42120d683c48b701a308b1e3d66, type: 2}
   m_sharedMaterial: {fileID: 2873888004447348911, guid: 5acdd42120d683c48b701a308b1e3d66, type: 2}
@@ -3106,7 +3107,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -42.37, y: 50}
+  m_AnchoredPosition: {x: -42.369995, y: 50}
   m_SizeDelta: {x: 500, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &957431521
@@ -4323,7 +4324,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -11, y: -3336}
+  m_AnchoredPosition: {x: -11, y: -5146}
   m_SizeDelta: {x: 720, y: 378}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1271763596
@@ -5026,7 +5027,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 579.55, y: 147.2}
+  m_AnchoredPosition: {x: 579.55, y: 147.20001}
   m_SizeDelta: {x: 400, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1669230577
@@ -11526,6 +11527,82 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e89a8f838133d1409ef2cb2dc77fd25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2053486209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2053486210}
+  - component: {fileID: 2053486212}
+  - component: {fileID: 2053486211}
+  m_Layer: 5
+  m_Name: Image (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2053486210
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053486209}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 658684782}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -3879}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2053486211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053486209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 0d545206eb9de484792564d7bb31850b, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2053486212
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053486209}
+  m_CullTransparentMesh: 1
 --- !u!1 &2064678566
 GameObject:
   m_ObjectHideFlags: 0
